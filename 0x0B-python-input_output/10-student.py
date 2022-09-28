@@ -42,11 +42,3 @@ class Student():
                 if att in self.__dict__.keys():
                     dic[att] = self.__dict__[att]
             return dic
-
-    def reload_from_json(self, json):
-        """
-        Return:
-            Transfer all attributes of json to self
-        """
-        for k, v in json.items():
-            setattr(self, k, v)
